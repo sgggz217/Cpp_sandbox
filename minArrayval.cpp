@@ -12,20 +12,21 @@ int main(){
         while ( i<= 4) { 
         if ( o < a[i]){
             z=o;
-        }else{
-          o=a[i];
+        }else{        //main loop that checks minimum value
+          o=a[i];    
           m=i;
         }
-        z=o;
-        i++;
+        z=o;//prevents a ram bug
+        i++;//incrementing the loop
         }
+        //swap happens here
         n=a[p];
         a[p]=z;
         a[m]=n;
-        p++;
+        p++; //incrementing this loop
     }
   while (k <= 4){
         cout << a[k] << " ";
-        k++;
+        k++;                    //loop for printing the array
     }
 }
