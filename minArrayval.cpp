@@ -8,13 +8,13 @@ int main(){
 
     while (p<=4){  
         o=a[p]; 
-        i=p;
+        i=p;            //both these depending on v prevents me from hardcoding vals ofc, also needed to increment them so the loop
         while ( i<= 4) { 
         if ( o < a[i]){
             z=o;
         }else{        //main loop that checks minimum value
-          o=a[i];    
-          m=i;
+          o=a[i];    //becomes the smallest value through the loop
+          m=i;        //this gives me the index of the smallest value
         }
         z=o;//prevents a ram bug
         i++;//incrementing the loop
@@ -30,3 +30,5 @@ int main(){
         k++;                    //loop for printing the array
     }
 }
+
+//i plan on kinda asking for an array instaed of hardcoded array
