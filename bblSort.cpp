@@ -15,15 +15,15 @@ using namespace std;
                 p[i]=b;
             } else {
                 p[i+1]=p[i+1];
-                p[i]=p[i];
+                p[i]=p[i];     //idk what else to put here
             }
             i++;
         };
-        i=0;
+        i=0;//resets after each iteration
         z++;
     };
     while(j<=7){
         cout << p[j] << " ";
-        j++;
+        j++;                  //prints the sorted array
     }
  }
