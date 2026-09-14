@@ -10,7 +10,7 @@ using namespace std;
         while (i<=6){
             if( p[i] > p[i+1] ){
                 a=p[i];
-                b=p[i+1];
+                b=p[i+1];  //swap happens here
                 p[i+1]=a;
                 p[i]=b;
             } else {
